@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-interface MainImageProps {
+interface MainTextProps {
   currentFootprint: string
 };
 
@@ -49,7 +49,7 @@ const StyledOblong = styled.a`
   }
 `;
 
-export default function MainImage({ currentFootprint }: MainImageProps) {
+export default function MainText({ currentFootprint }: MainTextProps) {
 
   return (
     <StyledContainer>

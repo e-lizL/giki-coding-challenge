@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import MainImage from './components/MainImage';
+import MainText from './components/MainText';
 import TargetsRow from './components/TargetsRow';
 import TotalTarget from './components/TotalTarget';
 import BackgroundDesign from './components/BackgroundDesign';
@@ -28,7 +28,7 @@ function App() {
 
       <BackgroundDesign />
 
-      <MainImage currentFootprint={carbonData.currentFootprint.toLocaleString("en-US")} />
+      <MainText currentFootprint={carbonData.currentFootprint.toLocaleString("en-US")} />
 
       <TargetsRow
         endTarget={carbonData.endTarget.toLocaleString("en-US")}
