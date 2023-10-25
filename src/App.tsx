@@ -14,6 +14,7 @@ const Container = styled.div`
   width: 600px;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 120px 0;
   border: 1px solid black;
   color: var(--primary-text);
   text-align: center;
