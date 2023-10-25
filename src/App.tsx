@@ -9,6 +9,7 @@ const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   border: 1px solid black;
+  color: var(--primary-text);
 `;
 
 const carbonData = {
