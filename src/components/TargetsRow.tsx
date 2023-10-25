@@ -6,13 +6,13 @@ interface TargetsRowProps {
 };
 
 const StyledWrapper = styled.div`
+  margin-top: 86px;
   display: flex;
   justify-content: center;
   gap: 30px;
 `;
 
 const StyledCard = styled.div`
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,7 +5,7 @@ interface MainImageProps {
 };
 
 const StyledContainer = styled.div`
-  /* border: 1px solid red; */
+  margin-top: -230px;
 `;
 
 const StyledHeading = styled.h1`
@@ -33,7 +33,7 @@ const StyledOblongWrapper = styled.div`
   margin-top: 35px;
 `;
 
-const StyledOblong = styled.button`
+const StyledOblong = styled.a`
   border: 0;
   padding: 15px 30px;
   background: var(--primary-text);
@@ -42,6 +42,11 @@ const StyledOblong = styled.button`
   font-weight: 700;
   font-size: 1.3rem;
   box-shadow: 0px 4px var(--lilacShadow);
+  text-decoration: none;
+  transition: 0.2s;
+  &:hover, &:active, &:focus {
+    background: var(--secondary-text);
+  }
 `;
 
 export default function MainImage({ currentFootprint }: MainImageProps) {
@@ -56,7 +61,7 @@ export default function MainImage({ currentFootprint }: MainImageProps) {
       <StyledDetail>of carbon emissions</StyledDetail>
 
       <StyledOblongWrapper>
-        <StyledOblong>Take a step</StyledOblong>
+        <StyledOblong href="https://giki.earth/">Take a step</StyledOblong>
       </StyledOblongWrapper>
 
     </StyledContainer>

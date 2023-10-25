@@ -16,7 +16,6 @@ const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 120px 0;
-  border: 1px solid black;
   color: var(--primary-text);
   text-align: center;
   font-weight: 600;

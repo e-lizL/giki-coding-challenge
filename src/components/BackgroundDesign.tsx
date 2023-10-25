@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-  border: 1px solid green;
   height: 300px;
   position: relative;
+  z-index: -1;
 `;
 
 const StyledImage = styled.img`
@@ -16,49 +16,49 @@ const StyledImage = styled.img`
 `;
 
 const StyledPurpleCloud = styled(StyledImage)`
-  width: 400px;
+  width: 480px;
   z-index: 10;
 `;
 
 const StyledWhiteCloud = styled(StyledImage)`
-  width: 350px;
+  width: 450px;
   z-index: 30;
 `;
 
 const StyledButterfly = styled(StyledImage)`
   width: 80px;
-  top: 23%;
-  left: 24%;
+  top: 20%;
+  left: 18%;
   transform: translate(-30%, -30%);
   z-index: 40;
 `;
 
 const StyledLeaf1a = styled(StyledImage)`
   width: 70px;
-  top: 20%;
-  left: 71%;
+  top: 14%;
+  left: 75%;
   z-index: 20;
 `;
 
 const StyledLeaf2a = styled(StyledImage)`
   width: 100px;
-  top: 30%;
-  left: 75%;
+  top: 22%;
+  left: 80%;
   z-index: 20;
 `;
 
 const StyledLeaf1b = styled(StyledImage)`
   width: 70px;
-  top: 75%;
-  left: 21%;
+  top: 76%;
+  left: 12%;
   transform: scale(-1, -1);
   z-index: 20;
 `;
 
 const StyledLeaf2b = styled(StyledImage)`
   width: 100px;
-  top: 70%;
-  left: 16%;
+  top: 74%;
+  left: 6%;
   transform: scale(-1, -1);
   z-index: 20;
 `;
