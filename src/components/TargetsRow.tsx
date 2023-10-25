@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 interface TargetsRowProps {
-  endTarget: number,
-  toCutTarget: number
+  endTarget: string,
+  toCutTarget: string
 };
 
 const StyledWrapper = styled.div`

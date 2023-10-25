@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface MainImageProps {
-  currentFootprint: number
+  currentFootprint: string
 };
 
 const StyledWrapper = styled.div`

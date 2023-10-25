@@ -15,7 +15,7 @@ const StyledOblong = styled.div`
 `;
 
 interface TotalTargetProps {
-  totalTarget: number
+  totalTarget: string
 };
 
 export default function TotalTarget({ totalTarget }: TotalTargetProps) {

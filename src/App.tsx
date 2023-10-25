@@ -26,14 +26,14 @@ function App() {
   return (
     <Container>
 
-      <MainImage currentFootprint={carbonData.currentFootprint} />
+      <MainImage currentFootprint={carbonData.currentFootprint.toLocaleString("en-US")} />
 
       <TargetsRow
-        endTarget={carbonData.endTarget}
-        toCutTarget={carbonData.toCutTarget}
+        endTarget={carbonData.endTarget.toLocaleString("en-US")}
+        toCutTarget={carbonData.toCutTarget.toLocaleString("en-US")}
       />
 
-      <TotalTarget totalTarget={carbonData.totalTarget} />
+      <TotalTarget totalTarget={carbonData.totalTarget.toLocaleString("en-US")} />
 
     </Container>
   )
