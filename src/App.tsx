@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import MainImage from './components/MainImage';
 import TargetsRow from './components/TargetsRow';
 import TotalTarget from './components/TotalTarget';
+import BackgroundDesign from './components/BackgroundDesign';
 
 const carbonData = {
   currentFootprint: 7565,
@@ -25,6 +26,8 @@ function App() {
 
   return (
     <Container>
+
+      <BackgroundDesign />
 
       <MainImage currentFootprint={carbonData.currentFootprint.toLocaleString("en-US")} />
 

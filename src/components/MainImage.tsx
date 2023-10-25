@@ -4,8 +4,8 @@ interface MainImageProps {
   currentFootprint: string
 };
 
-const StyledWrapper = styled.div`
-  /* margin-top: 150px; */
+const StyledContainer = styled.div`
+  /* border: 1px solid red; */
 `;
 
 const StyledHeading = styled.h1`
@@ -47,7 +47,7 @@ const StyledOblong = styled.button`
 export default function MainImage({ currentFootprint }: MainImageProps) {
 
   return (
-    <StyledWrapper>
+    <StyledContainer>
 
       <StyledHeading>Your footprint</StyledHeading>
 
@@ -59,6 +59,6 @@ export default function MainImage({ currentFootprint }: MainImageProps) {
         <StyledOblong>Take a step</StyledOblong>
       </StyledOblongWrapper>
 
-    </StyledWrapper>
+    </StyledContainer>
   )
 }
