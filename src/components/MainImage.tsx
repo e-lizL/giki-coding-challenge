@@ -1,6 +1,10 @@
-export default function MainImage() {
+interface MainImageProps {
+  currentFootprint: number
+};
+
+export default function MainImage({ currentFootprint }: MainImageProps) {
 
   return (
-    <h1>MainImage</h1>
+    <h1>MainImage: {currentFootprint}</h1>
   )
 }

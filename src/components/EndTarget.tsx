@@ -1,6 +1,10 @@
-export default function EndTarget() {
+interface endTarget {
+  endTarget: number
+};
+
+export default function EndTarget({ endTarget }: endTarget) {
 
   return (
-    <h1>EndTarget</h1>
+    <h1>EndTarget: {endTarget}</h1>
   )
 }

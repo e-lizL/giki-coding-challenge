@@ -11,14 +11,23 @@ const Container = styled.div`
   border: 1px solid black;
 `;
 
+const carbonData = {
+  currentFootprint: 7565,
+  endTarget: 5855,
+  toCutTarget: 409,
+  totalTarget: 2500
+}
+
 function App() {
+
+  console.log(carbonData.endTarget);
 
   return (
     <Container>
-      <MainImage />
-      <EndTarget />
-      <ToCutTarget />
-      <TotalTarget />
+      <MainImage currentFootprint={carbonData.currentFootprint} />
+      <EndTarget endTarget={carbonData.endTarget}/>
+      <ToCutTarget toCutTarget={carbonData.toCutTarget}/>
+      <TotalTarget totalTarget={carbonData.totalTarget} />
     </Container>
   )
 }
