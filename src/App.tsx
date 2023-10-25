@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 import MainImage from './components/MainImage';
-import EndTarget from './components/EndTarget';
-import ToCutTarget from './components/ToCutTarget';
+import TargetsRow from './components/TargetsRow';
 import TotalTarget from './components/TotalTarget';
+
+const carbonData = {
+  currentFootprint: 7565,
+  endTarget: 5855,
+  toCutTarget: 409,
+  totalTarget: 2500
+}
 
 const Container = styled.div`
   width: 600px;
@@ -12,23 +18,20 @@ const Container = styled.div`
   color: var(--primary-text);
 `;
 
-const carbonData = {
-  currentFootprint: 7565,
-  endTarget: 5855,
-  toCutTarget: 409,
-  totalTarget: 2500
-}
-
 function App() {
-
-  console.log(carbonData.endTarget);
 
   return (
     <Container>
+
       <MainImage currentFootprint={carbonData.currentFootprint} />
-      <EndTarget endTarget={carbonData.endTarget}/>
-      <ToCutTarget toCutTarget={carbonData.toCutTarget}/>
+
+      <TargetsRow
+        endTarget={carbonData.endTarget}
+        toCutTarget={carbonData.toCutTarget}
+      />
+
       <TotalTarget totalTarget={carbonData.totalTarget} />
+
     </Container>
   )
 }
