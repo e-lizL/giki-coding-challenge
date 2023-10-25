@@ -16,6 +16,8 @@ const Container = styled.div`
   margin: 0 auto;
   border: 1px solid black;
   color: var(--primary-text);
+  text-align: center;
+  font-weight: 600;
 `;
 
 function App() {

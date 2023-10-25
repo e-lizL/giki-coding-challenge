@@ -4,7 +4,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 35px;
 `;
 
 const StyledOblong = styled.div`
