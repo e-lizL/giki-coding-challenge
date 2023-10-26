@@ -61,7 +61,7 @@ export default function MainText({ currentFootprint }: MainTextProps) {
       <StyledDetail>of carbon emissions</StyledDetail>
 
       <StyledOblongWrapper>
-        <StyledOblong href="https://giki.earth/">Take a step</StyledOblong>
+        <StyledOblong data-test="link" href="https://giki.earth/">Take a step</StyledOblong>
       </StyledOblongWrapper>
 
     </StyledContainer>
