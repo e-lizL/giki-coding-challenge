@@ -1,15 +1,9 @@
 import styled from 'styled-components';
+import carbonData from './data';
 import MainText from './components/MainText';
 import TargetsRow from './components/TargetsRow';
 import TotalTarget from './components/TotalTarget';
 import BackgroundDesign from './components/BackgroundDesign';
-
-const carbonData = {
-  currentFootprint: 7565,
-  endTarget: 5855,
-  toCutTarget: 409,
-  totalTarget: 2500
-}
 
 const Container = styled.div`
   width: 600px;
@@ -41,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
